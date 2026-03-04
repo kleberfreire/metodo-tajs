@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // {
+    //   "name": "Jest Debug",
+    //   "type": "node",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/aula01-setup-jest/node_modules/jest/bin/jest.js",
+    //   "args": ["--runInBand", "--no-cache", "--testTimeout=999999", "test/"],
+    //   "cwd": "${workspaceFolder}/aula01-setup-jest",
+    //   "console": "integratedTerminal",
+    //   "internalConsoleOptions": "neverOpen",
+    //   "skipFiles": ["<node_internals>/**", "${workspaceFolder}/**/node_modules/**/*.js"],
+    //   "runtimeArgs": ["--experimental-vm-modules"],
+    //   "sourceMaps": true
+    // },
+
+     {
+      "name": "Attach to Node.js Debug Port",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "skipFiles": [
+        "<node_internals>/**",
+        "**/node_modules/**/*.js",
+        "${workspaceFolder}/**/node_modules/**/*.js"
+      ],
+      "smartStep": true,
+      "autoAttachChildProcesses": false,
+      "internalConsoleOptions": "openOnSessionStart",
+      "restart": true,
+      "sourceMaps": true,
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/aula01-setup-jest/test/**",
+        "${workspaceFolder}/aula01-setup-jest/src/**",
+        "!**/node_modules/**"
+      ]
+    }
+  ]
+}

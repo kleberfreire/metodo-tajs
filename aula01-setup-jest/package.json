@@ -1,0 +1,28 @@
+{
+  "name": "aula01-setup-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_OPTIONS='--experimental-vm-modules' pnpx jest --runInBand test/",
+    "test:dev": "NODE_OPTIONS='--experimental-vm-modules' pnpx jest --runInBand --watchAll test/",
+    "test:debug": "node --inspect-brk --experimental-vm-modules ./node_modules/jest/bin/jest.js --runInBand --watchAll --no-cache test/",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "check": "biome check --write ."
+  },
+  "keywords": [],
+  "author": "kleberfreire",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": "v24.11.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.5",
+    "jest": "^30.2.0",
+    "prettier": "^3.8.1"
+  }
+}
