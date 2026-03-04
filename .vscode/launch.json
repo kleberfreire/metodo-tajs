@@ -15,7 +15,7 @@
     //   "sourceMaps": true
     // },
 
-     {
+    {
       "name": "Attach to Node.js Debug Port",
       "type": "node",
       "request": "attach",

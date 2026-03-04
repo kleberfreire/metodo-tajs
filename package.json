@@ -1,0 +1,19 @@
+{
+  "name": "tajs-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TAJS - Test Automation JavaScript",
+  "scripts": {
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "check": "biome check --write ."
+  },
+  "keywords": [],
+  "author": "kleberfreire",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.5"
+  }
+}
